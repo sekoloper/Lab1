@@ -11,7 +11,11 @@ namespace Lab1
             {
                 Console.Write($"{array[i]}, ");
             }
-            Console.Write($"{array[array.Length - 1]}]\n");
+            if (array.Length > 0 )
+            {
+                Console.Write(array[array.Length - 1]);
+            }
+            Console.Write("]\n");
         }
     }
 }

@@ -93,7 +93,7 @@ namespace Lab1
             int num1, num2;
             InputValidation.GetInt32(out num1, "Введите первое число, не превышающее размерность int (2.147.483.647 по модулю): ");
             InputValidation.GetInt32(out num2, "Введите второе число, не превышающее размерность int (2.147.483.647 по модулю): ");
-            Console.WriteLine($"Результат:{safeDiv(num1, num2)}");
+            Console.WriteLine($"Результат: {safeDiv(num1, num2)}");
         }
 
         public double safeDiv(int x, int y)
@@ -102,7 +102,7 @@ namespace Lab1
             {
                 return 0;
             }
-            return x / y;
+            return (double)x / y;
         }
 
         public void MakeDecision()
