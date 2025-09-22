@@ -290,7 +290,7 @@ namespace Lab1
         {
             
             Random random = new Random();
-            int guess = -1, attempts = 0, answer = random.Next(10);
+            int guess = -1, attempts = 1, answer = random.Next(10);
             InputValidation.GetInt32(out guess, "Введите число от 0 до 9: ");
             while (guess != answer)
             {
