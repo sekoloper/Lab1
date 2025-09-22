@@ -25,7 +25,7 @@ namespace Lab1
         public static void GetInt32Array(out int[] array)
         {
             Console.WriteLine("Все вами введённые числа не должны превышать размерность int (2.147.483.647 по модулю)");
-            int arrSize, num;
+            int arrSize;
             GetInt32(out arrSize, "Введите размер массива: ");
             array = new int[arrSize];
             for (int i = 0; i < arrSize; i++)
