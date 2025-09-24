@@ -381,7 +381,7 @@ namespace Lab1
         public void Concat()
         {
             Console.WriteLine("Объединение двух массивов.");
-            int[] array1, array2, array3;
+            int[] array1, array2;
             InputValidation.GetInt32Array(out array1);
             Console.WriteLine("массив 1: ");
             Print.PrintInt32Array(array1);
