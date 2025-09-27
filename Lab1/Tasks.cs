@@ -370,12 +370,14 @@ namespace Lab1
 
         public void reverse(int[] arr)
         {
-            Console.Write("[");
-            for (int i = arr.Length - 1; i > 0; i--)
+            int temp, lenght = arr.Length;
+            for (int i = 0; i < (arr.Length / 2); i++)
             {
-                Console.Write($"{arr[i]}, ");
+                temp = arr[i];
+                arr[i] = arr[lenght - i - 1];
+                arr[lenght - i - 1] = temp;
             }
-            Console.Write($"{arr[0]}]\n");
+            Print.PrintInt32Array(arr);
         }
 
         public void Concat()
